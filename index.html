@@ -33,6 +33,13 @@
 	  d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
 	  ';path=/;expires='+new Date(0);i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
 	})(window,document,window['_fs_namespace'],'script','user');
+	
+	$(document).ready(function(){
+		FS.identify('SMSESSION_1Kdicookiessonopochissimi', {
+		  displayName: 'Matteo Assinnata',
+		  email: 'matteo@assinnata.com'
+		});
+	})
 	</script>
 
 </head>
