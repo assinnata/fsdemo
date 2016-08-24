@@ -1,0 +1,422 @@
+	<div class="cb-area-top-upper">
+		<div class="--area bp-area">
+			<div class="bp-widget bp-ui-dragRoot">
+				<div class="bp-widget-head"></div>
+				<div class="bp-widget-pref"></div>
+				<div class="bp-widget-body  ">
+					<div class="cb-notice-bar">
+						<div class="cb-notice-bar-wrapper">
+							<div class="ng-isolate-scope padding-top"></div>
+						</div>
+					</div>
+				</div>
+				<div class="bp-widget-foot"></div>
+			</div>
+		</div>
+	</div>
+<div class="cb-area-main">
+	<div class="cb-area-top-lower">
+		<div class="--area bp-area">
+			<div class="bp-widget bp-ui-dragRoot">
+				<div class="bp-widget-head"></div>
+					<div class="bp-widget-pref"></div>
+					<div class="bp-widget-body  ">
+						<div class="cb-crm-sas">
+							<div class="cb-crm-sas-wrapper">
+								<div class="cb-crm-sas-content clearfix  ">
+										<div class="sas-template clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="bp-widget-foot"></div>
+			</div>
+			<div class="bp-widget bp-ui-dragRoot">
+				<div class="bp-widget-head"></div>
+				<div class="bp-widget-pref"></div>
+				<div class="bp-widget-body  ">
+					<div class="cb-breadcrumb">
+						<div class="cb-breadcrumb-wrapper">
+							<div class="ng-isolate-scope"></div>
+							<h1 class="page-title no-margin-top">NOME PAGINA</h1>
+							<ul class="breadcrumb  ">
+								<li><a class="cursor-pointer ng-isolate-scope" title="Home">Home</a></li>
+							   <li class=" ">
+									<span class="arrow-right"></span>
+								   <span>Percorso</span>
+								</li>
+								<li class=" ">
+									<span class="arrow-right"></span>
+								   <span>Percorso</span>
+								</li>
+								<li class=" ">
+									<span class="arrow-right"></span>
+									<a class="cursor-pointer  " title="Giroconto">Nome Pagina</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bp-widget-foot"></div>
+			</div>
+		</div>
+	</div>
+	<div class="cb-main-container container-fluid">
+		<div class="cb-area-middle">
+			<div class="--area bp-area">
+				<div class="bp-container bp-ui-dragRoot bp-manageableArea --area bp-area ">
+					<div class="bp-container bp-ui-dragRoot cb-lazyinit-container">
+						<div class="tab-content">
+							<div style="display: block;" class="--area bp-area tab-pane cb-lazyinit active cb-lazyinit-loaded">
+								<div class="bp-container bp-ui-dragRoot tab-pane" id="panel-container-633667">
+									<div class="--area bp-area lp-panel-mainarea">
+										<div class="bp-widget bp-ui-dragRoot">
+										<div class="bp-widget-head"></div>
+										<div class="bp-widget-pref"></div>
+											<div class="bp-widget-body  ">
+												<div class="cb-riepilogo-saldo">
+													<div xmlns="http://www.w3.org/1999/xhtml" class="cb-riepilogo-saldo-wrapper">
+														<div class="ng-isolate-scope padding-top">
+														<div class="ng-scope" ui-view="top" autoscroll="false"><div class="row ng-scope">
+	<div class="col-xs-7">
+		<h2 class="ng-binding text-conti">Titolo</h2>
+	</div>
+</div>
+
+<div class="row margin-lg-bottom ng-scope">
+    <div class="col-xs-12">
+        <p class="no-margin-bottom ng-binding"> Aggiornato il 00/00/0000 - 00:00</p>
+        <div class="ng-isolate-scope cb-account-summary"><p class="no-margin-bottom ng-scope">IBAN: <span class="ng-binding"> IT 00 0 00000 00000 000000000000 </span></p><p class="no-margin-bottom">Intestato a: JOHN SMITH</p></div>
+    </div>
+</div>
+<div class="row margin-bottom">
+        <div cb-list-buttons="" cb-lb-class="btn-brand" class="col-md-9 col-xs-12 top-action-button margin-sm-top ng-isolate-scope" ng-transclude="">
+            <button cb-button="" cb-sref="transactions.filter.results" cb-request="lastTenMovements" class="text-uppercase btn-brand btn btn-default ng-scope ng-isolate-scope" ng-transclude=""><span class="ng-binding ng-scope">ultimi 10 movimenti</span></button>
+            <button ng-click="resetDataRange()" cb-button="" cb-sref="transactions.filter.results" cb-request="lastThirtyDaysFilter" class="text-uppercase btn btn-default ng-scope ng-isolate-scope" ng-transclude=""><span class="ng-binding ng-scope">ultimi 30 giorni</span></button>
+            <button ng-click="resetDataRange()" cb-button="" cb-sref="transactions.filter.results" cb-request="lastThreeMonthsFilter" class="text-uppercase btn btn-default ng-scope ng-isolate-scope" ng-transclude=""><span class="ng-binding ng-scope">ultimi tre mesi</span></button>
+            
+        </div>
+    </div>
+<div class="row margin-bottom">
+        <div class="col-xs-6">
+            <div class="cb-datepicker-wrapper btn-replaced"><button value="" name="" cb-datepicker="" ng-model="date.dateRange" cb-visible-months="2" cb-range="" cb-after="range.dateFrom" cb-before="range.dateTo" class="btn text-uppercase ng-isolate-scope ng-pristine ng-valid"><span>Seleziona periodo</span><span> | </span><span class="glyphicon glyphicon-calendar"></span></button></div>
+        </div>
+        <!-- uiView: toolbar --><div class="col-xs-6 ng-scope" ui-view="toolbar" autoscroll="false"><div cb-toolbar="" class="cb-toolbar" ng-transclude="">
+    <ul class="ng-scope">
+        <li>
+            <button cb-xls-url="api_transactions" cb-xls-param-date-from="" cb-xls-param-date-to="" cb-xls-param-text="" cb-xls-param-transactions-type="0" cb-xls-param-next-element="" cb-xls-param-description="" class="btn btn-link" tooltip="Scarica Excel">
+                <span class="icon-xls"></span>
+            </button>
+        </li>
+        <li>
+            <button cb-pdf-url="api_transactions" cb-pdf-download="true" cb-pdf-param-date-from="" cb-pdf-param-date-to="" cb-pdf-param-text="" cb-pdf-param-transactions-type="0" cb-pdf-param-next-element="" cb-pdf-param-description="" class="btn btn-link" tooltip="Scarica PDF">
+                <span class="icon-pdf"></span>
+            </button>
+        </li>
+        <li>
+            <button href="#" class="btn btn-link" tooltip="Stampa" cb-print="">
+                <span class="icon-print"></span>
+            </button>
+        </li>
+        <li>
+            <button name="" type="button" class="btn btn-link ng-pristine ng-valid" cb-parentpointer="advanced" cb-parent="" cb-ui-sref="toggle:transactions.filter.advanced" ng-model="advacedParams">
+                <span class="icon-search"></span>
+            </button>
+        </li>
+    </ul>
+</div></div>
+    </div>
+	
+	
+<div class="full-bleed bg-box bordered-box account-summary ng-scope">
+
+	<div class="row">
+		<div class="col-xs-6 col-md-3">
+			<div class="centered">
+				<dl class="riepilogo">
+					<dt class="ng-binding">Saldo contabile</dt>
+					<dd>
+						<span class="ng-binding" id="codice_ind">99999999999,99 €</span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+			<div class="centered">
+				<dl class="riepilogo">
+					<dt class="ng-binding">Saldo disponibile</dt>
+					<dd>
+						<span class="form-control-static ng-binding">99999999999,99 €</span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+
+			<div class="ng-scope"><div class="centered ng-scope">
+			  <div class="riepilogo entrate">
+				<h4 class="ng-binding">
+				  Entrate mese di Giugno
+				  <strong><span class="currency ng-isolate-scope text-positive"><span class="ng-binding ng-scope">+0,00 €</span></span></strong>
+				</h4>
+			  </div>
+			  <div>
+				<div class="">
+				<div class="progress  small">
+					<div style="width: 0%;" class="progress-bar progress-bar-success">
+					</div>
+				</div>
+			</div>
+				<div>
+				<div class="progress  small">
+					<div style="width: 0%;" class="progress-bar progress-bar-danger" role="progressbar">
+					</div>
+				</div>
+			</div>
+			  </div>
+			  <div class="riepilogo uscite">
+				<h4 class="ng-binding">
+				  Uscite mese di Giugno
+				  <strong><span class="currency ng-isolate-scope text-positive"><span class="ng-binding ng-scope">-0,00 €</span></span></strong>
+				</h4>
+			  </div>
+			</div>
+			</div>
+
+					</div>
+				</div>
+
+			</div>
+			</div>
+			
+			<form class="ng-scope ng-pristine ng-valid" name="girocontoForm_form" cb-validation-schema="giroconto/schema/prepare" cb-validation="girocontoForm">
+    <div class="row">
+        <div class="col-xs-6 form-group" show-errors="">
+               <label class="label-m label-block ng-binding" for="amount">Importo </label>
+               <div class="moneyfield input-lg"><input spellcheck="false" autocorrect="off" autocomplete="off" name="amount" class="form-control input-lg ng-isolate-scope ng-pristine ng-valid" x-ng-model="girocontoForm.amountInternalMoneyTransfer.amount" cb-validate="" cb-amount-input="" type="text"><span class="icon-euro"></span></div>
+               <!-- ngIf: show --><div class="ng-scope ng-hide" cb-validate-errors="amount" ng-if="show" ng-show="field.$invalid"><!-- ngRepeat: error in field.$errorMessages --></div><!-- end ngIf: show -->
+           </div>
+        <div class="col-xs-6">
+            <!-- uiView: balance --><div class="ng-scope" ui-view="balance" autoscroll="false"><div class="row ng-scope">
+    <div class="col-xs-12">
+       <label class="control-label ng-binding">Riepilogo saldo</label>
+    </div>
+</div>
+
+<div class="row ng-scope">
+    <div class="col-xs-12">
+        <div cb-progress="" x-cb-total="response.availableBalance.amount" x-cb-value="girocontoForm.amountInternalMoneyTransfer.amount" cb-manage-color="true" x-cb-size="normal" cb-scheme="progress-bar-success" cb-invert="true" class="bar-invert">
+    <div class="progress progress-bar-success normal">
+        <div style="width: 0%;" class="progress-bar  progress-bar-danger" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="0.000" ng-style="{width:(percentage) + '%'}">
+    <!-- ngIf: showlabel -->
+        </div>
+    </div>
+</div>
+        <p class="pull-left ng-binding">0,00 €</p>
+        <p class="pull-right ng-binding">0 €</p>
+    </div>
+</div></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 form-group" show-errors="">
+            <label class="label-m label-block ng-binding" for="description">Causale</label>
+            <textarea name="description" class="form-control input-lg ng-pristine ng-valid" placeholder="Inserisci qui la causale (max 140 caratteri)" x-ng-model="girocontoForm.description" cb-validate=""></textarea>
+            <!-- ngIf: show --><div class="ng-scope ng-hide" cb-validate-errors="description" ng-if="show" ng-show="field.$invalid"><!-- ngRepeat: error in field.$errorMessages --></div><!-- end ngIf: show -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-4 form-group" show-errors="">
+            <label class="label-m label-block ng-binding" for="executionDate">Data</label>
+            <div class="cb-datepicker-wrapper"><input name="executionDate" x-cb-datepicker="" x-ng-model="girocontoForm.executionDate" x-cb-after="response.executionDateMinimumMoneyTransferInternal" cb-validate="" class="form-control input-lg ng-isolate-scope ng-pristine ng-valid ng-valid-date ng-valid-date-selectable" type="text"><div class="icon-calendario"></div></div>
+            <!-- ngIf: show --><div class="ng-scope ng-hide" cb-validate-errors="executionDate" ng-if="show" ng-show="field.$invalid"><!-- ngRepeat: error in field.$errorMessages --></div><!-- end ngIf: show -->
+        </div>
+    </div>
+    
+    <div class="row ng-hide" ng-show="showExecDateWarning">
+		<div class="col-xs-12">
+			<span class="ng-binding">Il saldo disponibile sarà aggiornato alla data di esecuzione del giroconto. Se a quella data, il saldo fosse inferiore all'importo del giroconto, quest'ultimo non sarà eseguito</span>
+		</div>
+	</div>
+
+    <div class="row">
+        <div class="col-xs-6 form-group" show-errors="">
+            <label class="label-m label-block ng-binding">Commissioni</label>
+            <p class="form-control-static input-lg ng-binding">0,00 €</p>
+        </div>
+    </div>
+
+    
+  <div class="full-bleed action-box">
+        <div class="col-xs-12 text-center form-group margin-lg-bottom">
+            <button cb-button="" x-ng-click="cancelData()" class="btn-lg btn btn-default" ng-transclude=""><span class="ng-binding ng-scope">
+                ANNULLA
+            </span></button>
+            
+            <span name="" class="btn btn-brand btn-lg ng-binding ng-pristine ng-valid" cb-ui-sref="next" ng-model="girocontoForm" cb-param-name="verifyRequest" cb-validate-form="">
+                CONTINUA
+            </span>
+        </div>
+    </div>
+</form>
+
+
+<div style="display: block;" class="--area bp-area tab-pane cb-lazyinit active cb-lazyinit-loaded"><div class="bp-container bp-ui-dragRoot tab-pane" id="panel-container-430252" data-pid="panel-container-430252"><div class="--area bp-area lp-panel-mainarea"><div data-pid="" class="bp-widget bp-ui-dragRoot">
+	<div class="bp-widget-head"></div>
+	<div class="bp-widget-pref"></div>
+	<div class="bp-widget-body ng-scope"><div class="cb-mobilerecharge">
+	<div xmlns="http://www.w3.org/1999/xhtml" class="cb-mobilerecharge-wrapper">
+        <div class="ng-isolate-scope" cb-alerts-list=""></div>
+		<!-- uiView:  --><div class="ng-scope" ui-view=""><!-- uiView: prepare --><div class="ng-scope" ui-view="prepare" autoscroll="false"><div class="row ng-scope">
+	<div class="col-xs-8">
+		<h2 class="text-conti ng-binding">Ricarica telefonica</h2>
+	</div>
+	<div class="col-xs-4"></div>
+</div>
+
+
+<form class="ng-scope ng-pristine ng-valid" name="ricaricaForm_form" cb-validation-schema="ricarica-telefonica/schema/prepare" cb-validation="ricaricaForm">
+
+    <!-- uiView: addressbook --><div class="ng-scope" ui-view="addressbook" autoscroll="false"><div class="cb-address-book ng-scope">
+    <h5 class="no-margin-bottom"><strong class="ng-binding">Beneficiario</strong></h5>
+    <strong class="ng-binding">Seleziona il beneficiario della ricarica</strong>
+
+    <div class="cb-recipient-selector">
+    	<div class="col-sx">
+		    <a class="cb-button-new ng-binding text-bold" x-ng-click="newContact()" cb-parentpointer="new-contact" cb-parent="" ng-class="{'text-bold': !address.code}"><span class="icon-add"></span>Nuovo destinatario</a>
+		</div>
+		<div class="col-dx">
+		    <div class="ng-isolate-scope cb-carousel" x-cb-carousel="" x-cb-refresh-on="addressBook"><a class="cb-carousel-nav cb-prev disabled ng-hide" ng-class="{disabled: currentPage <= 1}" ng-click="prev()" ng-show="keepNavArrows || pageCount > 1">
+    <span class="icon-arrow-left"></span></a>
+<div class="cb-carousel-frame" ng-transclude="">
+		        <ul style="transform: translate3d(0px, 0px, 0px);" class="circle-list ng-scope">
+		            <!-- ngRepeat: address in addressBook -->
+		        </ul>
+		    </div>
+<a class="cb-carousel-nav cb-next disabled ng-hide" ng-class="{disabled: currentPage >= pageCount}" ng-click="next()" ng-show="keepNavArrows || pageCount > 1">
+    <span class="icon-arrow-right"></span>
+</a></div>
+		</div>
+    </div>
+
+    <!-- uiView: arrow --><div class="ng-scope" ui-view="arrow" autoscroll="false"><div class="cb-recipient-panel cb-recipient-details no-padding-bottom ng-scope" x-cb-parentpointer="new-contact" x-cb-pointer-show="1 == 1" x-cb-children=""><div style="left: 80px;" class="cb-parent-pointer visible"></div></div></div>
+    <!-- uiView: addressbook-detail --><div class="ng-scope" ui-view="addressbook-detail" autoscroll="false"></div>
+    <!-- uiView: addressbook-newdetail --><div class="ng-scope" ui-view="addressbook-newdetail" autoscroll="false"></div>
+    <!-- uiView: addressbook-new --><div class="ng-scope" ui-view="addressbook-new" autoscroll="false"><div class="cb-recipient-panel cb-recipient-new ng-scope">
+<div class="col-xs-6">
+    <div class="form-group" show-errors="">
+        <label class="control-label ng-binding">Numero telefonico<sup>*</sup></label>
+        <input name="phoneNumber" class="form-control input-lg ng-pristine ng-valid" x-ng-model="ricaricaForm.phoneNumber" cb-validate="" type="text">
+        <!-- ngIf: show --><div class="ng-scope ng-hide" cb-validate-errors="phoneNumber" ng-if="show" ng-show="field.$invalid"><!-- ngRepeat: error in field.$errorMessages --></div><!-- end ngIf: show -->
+    </div>
+	<label class="checkbox-inline">
+        <input class="ng-pristine ng-valid" name="" label="Salva in rubrica" x-cb-checkbox="" ng-disabled="entryProperties.disableCustomize" x-ng-model="ricaricaForm.save" type="checkbox"><span class="check-radio-box-icon"> Salva in rubrica</span>
+    </label>
+</div>
+<div class="col-xs-6">
+    <div class="form-group">
+        <label class="control-label ng-binding">Gestore<sup>*</sup></label>
+        <div name="telco" x-cb-select="" x-cb-datasource="phoneCompanies" cb-return-value="true" x-ng-model="ricaricaForm.telco" cb-validate="" class="form-control input-lg btn-group bootstrap-select ng-binding ng-isolate-scope ng-pristine ng-valid" ng-class="{'disabled': (!enabled)}">
+    <a class="btn dropdown-toggle selectpicker btn-default" title="" ng-click="openMenu()" tabindex="0">
+        <span class="filter-option pull-left ng-binding"></span>
+        <div class="arrow"><span class="caret"></span></div>
+    </a>
+    <div class="dropdown-menu outer ">
+        <div class="scrollable-wrapper">
+            <ul class="dropdown-menu inner" role="menu">
+                <!-- ngRepeat: option in dataSource --><li title="TIM" class="ng-scope" bindonce="" ng-repeat="option in dataSource" bo-class="{ 'disabled' : !isEnabled(option) }" cb-tap="selectItem(option, $event)" bo-title="option.label">
+                    <a class="dropdownLink" bo-class="'dropdownLink ' + option.icon">
+                        <span class="text" bo-text="option.label">TIM</span>
+                    </a>
+                </li><!-- end ngRepeat: option in dataSource --><li title="Tre" class="ng-scope" bindonce="" ng-repeat="option in dataSource" bo-class="{ 'disabled' : !isEnabled(option) }" cb-tap="selectItem(option, $event)" bo-title="option.label">
+                    <a class="dropdownLink" bo-class="'dropdownLink ' + option.icon">
+                        <span class="text" bo-text="option.label">Tre</span>
+                    </a>
+                </li><!-- end ngRepeat: option in dataSource --><li title="Vodafone" class="ng-scope" bindonce="" ng-repeat="option in dataSource" bo-class="{ 'disabled' : !isEnabled(option) }" cb-tap="selectItem(option, $event)" bo-title="option.label">
+                    <a class="dropdownLink" bo-class="'dropdownLink ' + option.icon">
+                        <span class="text" bo-text="option.label">Vodafone</span>
+                    </a>
+                </li><!-- end ngRepeat: option in dataSource --><li title="Wind" class="ng-scope" bindonce="" ng-repeat="option in dataSource" bo-class="{ 'disabled' : !isEnabled(option) }" cb-tap="selectItem(option, $event)" bo-title="option.label">
+                    <a class="dropdownLink" bo-class="'dropdownLink ' + option.icon">
+                        <span class="text" bo-text="option.label">Wind</span>
+                    </a>
+                </li><!-- end ngRepeat: option in dataSource --><li title="Poste mobile" class="ng-scope" bindonce="" ng-repeat="option in dataSource" bo-class="{ 'disabled' : !isEnabled(option) }" cb-tap="selectItem(option, $event)" bo-title="option.label">
+                    <a class="dropdownLink" bo-class="'dropdownLink ' + option.icon">
+                        <span class="text" bo-text="option.label">Poste mobile</span>
+                    </a>
+                </li><!-- end ngRepeat: option in dataSource --><li title="Tiscali mobile" class="ng-scope" bindonce="" ng-repeat="option in dataSource" bo-class="{ 'disabled' : !isEnabled(option) }" cb-tap="selectItem(option, $event)" bo-title="option.label">
+                    <a class="dropdownLink" bo-class="'dropdownLink ' + option.icon">
+                        <span class="text" bo-text="option.label">Tiscali mobile</span>
+                    </a>
+                </li><!-- end ngRepeat: option in dataSource -->
+            </ul>
+        </div>
+    </div>
+    
+    
+</div>
+         <!-- ngIf: show --><div class="ng-scope ng-hide" cb-validate-errors="phoneNumber" ng-if="show" ng-show="field.$invalid"><!-- ngRepeat: error in field.$errorMessages --></div><!-- end ngIf: show -->
+    </div>
+</div>
+</div></div>
+    <!-- uiView: addressbook-customize --><div class="ng-scope" ui-view="addressbook-customize" autoscroll="false"></div>
+    <!-- uiView: addressbook-continue --><div class="ng-scope" ui-view="addressbook-continue" autoscroll="false"><div class="cb-recipient-panel cb-recipient-continue padding-top ng-scope">
+	<div class="row text-center">
+		<span class="btn btn-brand btn-lg ng-binding" ng-click="continue()">
+			Continua
+		</span>
+	</div>
+</div></div>
+    <!-- uiView: addressbook-cuts --><div class="ng-scope" ui-view="addressbook-cuts" autoscroll="false"></div>
+</div>
+
+<!-- uiView: addressbook-btns --><div class="ng-scope" ui-view="addressbook-btns" autoscroll="false"></div></div>
+</form></div>
+<!-- uiView: recap --><div class="ng-scope" ui-view="recap" autoscroll="false"></div>
+<!-- uiView: confirm --><div class="ng-scope" ui-view="confirm" autoscroll="false"></div></div>
+		<div style="display: none;" class="ng-isolate-scope" cb-spinner-tracker=""><div class="loading-box"><div class="ng-isolate-scope" x-cb-spinner="circle"><div class="cb-spinner cb-spinner-circle"></div></div></div></div>
+	</div>
+</div></div>
+	<div class="bp-widget-foot"></div>
+</div></div></div></div>
+			
+			
+			
+														</div>
+													</div>
+												</div>
+											</div>
+										<div class="bp-widget-foot"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cb-area-bottom">
+		<div class="--area bp-area">
+			<div class="bp-widget bp-ui-dragRoot">
+			<div class="bp-widget-head"></div>
+			<div class="bp-widget-pref"></div>
+			<div class="bp-widget-body  ">
+				<div class="cb-crm-sas">
+					<div class="cb-crm-sas-wrapper">
+						<div class="cb-crm-sas-content clearfix  ">
+								<div class="sas-template clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bp-widget-foot"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

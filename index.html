@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homebanking</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<script src="js/jquery.js"></script>
+    <script src="js/simple-scrollbar.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/menugen.js"></script>
+	<script src="js/menu.js"></script>
+
+
+
+	<link rel="stylesheet" href="css/simple-scrollbar.css" />
+	<link rel="stylesheet" href="css/base.css" type="text/css" />
+	<link rel="stylesheet" href="css/cb-main-container.css" type="text/css" />
+
+	<script>
+	window['_fs_debug'] = false;
+	window['_fs_host'] = 'abbanca.it';
+	window['_fs_org'] = '1N34R';
+	window['_fs_namespace'] = 'FS';
+	(function(m,n,e,t,l,o,g,y){
+	  if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+	  g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+	  o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+	  y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+	  g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+	  g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+	  g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[^;`]*`[^;`]*`[^;`]*`')){
+	  d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+	  ';path=/;expires='+new Date(0);i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+	})(window,document,window['_fs_namespace'],'script','user');
+	</script>
+
+</head>
+<body>
+<div class="pageContainer">
+<div class="bp-page bp-portal-area">
+<div class="lp-page-children bp-area --area">
+<div class="bp-container bp-ui-dragRoot">
+<div class="cb-nav-top">
+	<h1>
+		<a class="cb-nav-toggle" href="#">
+			<div class="icon-hamburger" id="nav-icon1">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		</a>
+		<img class="cb-nav-top-logo" src="img/logo.png">
+	</h1>
+	<ul class="cb-nav-top-left">
+		<li><a class="cb-nav-ricerca-rapida" href="#"><span class="icon-search"></span><p>Ricerca<br>rapida</p><p class="hidden">Chiudi</p></a></li>
+		<li>
+		<a class="cb-nav-operazioni-rapide" href="#">
+		<span class="icon-operazioni-rapide"></span>
+		<p>Operazioni<br>rapide</p><p class="hidden">Chiudi</p>
+		</a>
+		</li>
+		<li class="hidden"><a href="#"></a></li>
+	</ul>
+	<ul class="cb-nav-top-right">
+		<li>
+			<a class="cb-nav-profile-ct openRightpanel ilmioprofilo" href="#"><span class="icon-profilo"></span><p>Il mio<br>profilo</p></a>
+		</li>
+		<li class="logout">
+			<form id="logout" action="/portalserver/logout" method="post">
+			<a class="cb-nav-logout" href="#"><span class="icon-logout"></span><p>Esci</p></a>
+			</form>
+		</li>
+	</ul>
+	<ul class="cb-nav-top-right">
+		<li><a class="tile-messaggi-icon" href="#"></a></li>
+		<li><a class="cb-nav-online-coll openRightpanel onlineCollaboration" href="#"><span class="icon-chat"></span><p>Online Collaboration</p></a></li>
+	</ul>
+</div>
+<div class="cb-manageable-area cb-responsive-container" id="content-loader">LOAD INSIDE</div>
+<div class="cb-nav-left" style="display: inline-block;" ss-container>
+	<div class="--area bp-area">
+		<div class="bp-widget bp-ui-dragRoot">
+			<div class="bp-widget-head"></div>
+			<div class="bp-widget-pref"></div>
+			<div class="bp-widget-body  ">
+				<div class="cb-navigation">
+					<div class="cb-navigation-wrapper">
+						<div class="bp-g-model"></div>
+						<div>
+							<div class="cb-menu-levels-wrapper" id="menu-container">
+								<!-- livello home -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bp-widget-foot"></div>
+		</div>
+	</div>
+</div>
+<div class="cb-nav-right" style="display: inline-block;" ss-container>
+<div class="--area bp-area cb-navright-profile">
+<div class="bp-widget bp-ui-dragRoot">
+<div class="bp-widget-body  ">
+<div class="cb-profilo-mifid">
+<div class="cb-profilo-mifid-wrapper">
+	<div class="tile-container-profilo-mifid">
+		<div class="bp-widget bp-ui-dragRoot">
+			<div class="row">
+			<div class="col-xs-11 text-left">
+			<h3 class="ng-binding">John Smith</h3>
+			</div>
+			</div>
+			<br>
+			<div class="row">
+			<div class="col-xs-3">
+			<img class="avatar" src="img/user.png">
+			</div>
+			<div class="col-xs-9">
+				<span class="ng-binding">Profilo Mifid: </span>
+				<p><strong class="ng-binding">SCONOSCIUTO</strong></p>
+				<div class="progress">
+					<div style="width: 0%;" class="progress-bar progress-bar-success"></div>
+				</div>
+			</div>
+			</div>
+			<br>
+			<div class="row">
+			<div class="col-xs-12 text-center">
+			<button class="btn-brand btn-lg btn-block btn btn-default"><span class="ng-binding  ">Scopri che investitore sei</span></button>
+			&nbsp;
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="bp-widget-foot"></div>
+</div>
+<div class="bp-widget bp-ui-dragRoot">
+	<div class="bp-widget-head"></div>
+	<div class="bp-widget-pref"></div>
+	<div class="bp-widget-body">
+		<div class="cb-access-information">
+			<div class="cb-access-information-wrapper bg-box">
+				<div class="ng-isolate-scope"></div>
+				<ul>
+					<li><span>Ultimo accesso</span>:</li>
+					<li class="user-access-details">8 giugno 2016 - 10.54</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bp-widget bp-ui-dragRoot">
+	<div class="bp-widget-body">
+		<div class="cb-navigation">
+			<div class="cb-navigation-wrapper">
+				<div class="cb-menu-levels-wrapper" id="menu-container2">
+				<div class="cb-menu-level active">
+					<div class="frame">
+						<div class="wrapper">
+							<div class="main-nav">
+								<ul class="nav cb-nav cb-nav-areas">
+									<li>
+									<a class="cb-nav-area-link cb-nav-archivio cursor-pointer">
+									<span class="icon-archivio text-archivio"></span>Archivio</a>
+									</li>
+									<li>
+									<a class="cb-nav-area-link cb-nav-messaggi cursor-pointer">
+									<span class="icon-messaggi text-messaggi"></span>Messaggi</a>
+									</li>
+									<li>
+									<a class="cb-nav-area-link cb-nav-rubrica cursor-pointer">
+									<span class="icon-rubrica text-rubrica"></span>Rubrica contatti</a>
+									</li>
+									<li class="cb-nav-arrow">
+									<a class="cb-nav-area-link cb-nav-strumenti" href="#">
+									<span class="icon-strumenti text-strumenti"></span>I  miei strumenti
+									<span class="arrow-right"></span></a>
+									</li>
+									<li class="cb-nav-arrow">
+									<a class="cb-nav-area-link cb-nav-sicurezza" href="#">
+									<span class="icon-sicurezza text-sicurezza"></span>Gestione sicurezza
+									<span class="arrow-right"></span></a>
+									</li>
+									<li class="cb-nav-arrow">
+									<a class="cb-nav-area-link cb-nav-areapersonale" href="#">
+									<span class="icon-areapersonale text-areapersonale"></span>Gestione profilo
+									<span class="arrow-right"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cb-menu-level ahead"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bp-widget-foot"></div>
+</div>
+</div>
+<div class="--area bp-area hidden cb-navright-chat">
+	<div class="bp-widget bp-ui-dragRoot">
+		<div class="bp-widget-head"></div>
+		<div class="bp-widget-pref"></div>
+		<div class="bp-widget-body  ">
+			<div class="cb-online-collaboration-menu">
+				<div class="cb-online-collaboration-menu-wrapper">
+					<div class="ng-isolate-scope"></div>
+					<div class="main-nav">
+						<ul class="nav cb-nav cb-nav-areas">
+							<li>
+								<a class="cb-nav-area-link cb-nav-chat ng-binding" href="#">
+								<span class="icon-chat"></span>Chat</a>
+							</li>
+							<li class=" ">
+								<a class="cb-nav-area-link ng-binding ng-isolate-scope">
+								<span class="glyphicon glyphicon-phone"></span>
+								Richiedi appuntamento telefonico</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bp-widget-foot"></div>
+	</div>
+</div>
+</div>
+<div class="cb-ricerca-rapida cb-responsive-container-floating ricercarapida">
+	<div class="--area bp-area">
+		<div class="bp-widget bp-ui-dragRoot">
+			<div class="bp-widget-head"></div>
+			<div class="bp-widget-pref"></div>
+			<div class="bp-widget-body  ">
+				<div>
+					<div class="cb-ricerca-rapida-wrapper">
+						<div class="cb-search-form">
+							<input placeholder="Cerca" size="10" class="cb-search-input ng-pristine ng-valid" type="text">
+							<input value="Cerca" class="cb-search-submit margin-right" type="submit">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="cb-operazioni-rapide cb-responsive-container-floating operazionirapide">
+	<div class="--area bp-area">
+		<div class="bp-widget bp-ui-dragRoot">
+			<div class="bp-widget-head"></div>
+			<div class="bp-widget-pref"></div>
+			<div class="bp-widget-body">
+				<div>
+				<div class="cb-operazioni-rapide-wrapper"><div class="ng-isolate-scope"></div>
+				<div class="cb-operazioni-rapide-menu  ">
+				<div class="actions">
+
+				<div>
+				<a href="https://uat.chebanca.it/portalserver/homebanking/home#">
+				<span class="icon icon-bonifico"></span>
+				<span>BONIFICO</span>
+				</a>
+				</div>
+				<div>
+				<a href="https://uat.chebanca.it/portalserver/homebanking/home#">
+				<span class="icon icon-giroconto"></span>
+				<span>GIROCONTO</span>
+				</a>
+				</div>
+				<div>
+				<a href="https://uat.chebanca.it/portalserver/homebanking/home#">
+				<span class="icon icon-acquista-titoli"></span>
+				<span>ACQUISTA TITOLI</span>
+				</a>
+				</div>
+				<div>
+				<a href="https://uat.chebanca.it/portalserver/homebanking/home#">
+				<span class="icon icon-vincola"></span>
+				<span>VINCOLA</span>
+				</a>
+				</div>
+				<div>
+				<a href="https://uat.chebanca.it/portalserver/homebanking/home#">
+				<span class="icon icon-alimentazione"></span>
+				<span>ALIMENTAZIONE</span>
+				</a>
+				</div>
+				<div>
+				<a href="https://uat.chebanca.it/portalserver/homebanking/home#">
+				<span class="icon icon-ricarica-telefonica"></span>
+				<span>RICARICA TELEFONICA</span>
+				</a>
+				</div>
+				</div></div>
+				</div>
+				</div>
+			</div>
+			<div class="bp-widget-foot"></div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+	   <link href="https://api.motion.ai/sdk/webchat.css" rel="stylesheet" type="text/css">
+  <script src="https://api.motion.ai/sdk/webchat.js"></script>
+  <script>
+  motionAI_Init('8200?sendBtn=SEND&inputBox=Type+something...&token=5c683e0aefb67565cd50602949d586bb',true,400,470); /* botID with access token, display bot icon?, modal width, modal height */
+  /* you may also invoke motionAI_Open(); to manually open the modal */
+  </script>
+</body>
+</html>
